@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+       >
+
+        <ImageView
+            android:id="@+id/xitongruanjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/xitongruanjian"
+            android:background="@drawable/comm_btn_bg2_n" />
+
+        <ImageView
+            android:id="@+id/yonghuaruanjian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/yonghuaruanjian"
+              android:background="@drawable/comm_btn_bg2_s" />
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" 
+        android:background="@drawable/dilanbeijing">
+
+        <TextView
+            android:id="@+id/appgeshuxinxi"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="0.30"
+            
+            android:text="TextView" />
+
+        <ImageView
+            android:id="@+id/jiugongge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.20"
+            android:src="@drawable/jiugongge" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/linearLayout1"
+        android:layout_below="@+id/linearLayout2" 
+          android:layoutAnimation="@anim/zhongzhuang"
+        android:visibility="gone">
+    </ListView>
+
+    <GridView
+        android:id="@+id/gridView1"
+         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@id/linearLayout1"
+        android:layout_below="@+id/linearLayout2" 
+        android:verticalSpacing="20dp"
+        android:horizontalSpacing="20dp"
+        android:numColumns="auto_fit"
+        
+        android:columnWidth="70dp"
+        android:layoutAnimation="@anim/zhongzhuang"
+     >
+
+    </GridView>
+
+</RelativeLayout>

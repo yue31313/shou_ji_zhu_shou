@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   android:background="@drawable/background"
+    >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/mainmenu_title" />
+
+    <ImageView
+        android:id="@+id/menu_icon2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu_icon0"
+        android:layout_toRightOf="@+id/menu_icon1"
+        android:src="@drawable/menu_icon_2_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/menu_icon2"
+        android:layout_below="@+id/menu_icon2"
+        android:layout_marginTop="22dp"
+        android:src="@drawable/menu_icon_3_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menu_icon0"
+        android:layout_alignTop="@+id/menu_icon3"
+        android:src="@drawable/menu_icon_5_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu_icon1"
+        android:layout_marginTop="54dp"
+        android:layout_toLeftOf="@+id/menu_icon1"
+        android:src="@drawable/menu_icon_0_0" />
+
+    <ImageView
+        android:id="@+id/menu_icon4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/menu_icon3"
+        android:layout_marginTop="44dp"
+        android:layout_toLeftOf="@+id/menu_icon3"
+        android:src="@drawable/menu_icon_4_0" />
+
+    <TextView
+        android:id="@+id/xianshi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/menu_icon4"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp"
+        android:textColor="@android:color/black" />
+
+    <ImageView
+        android:id="@+id/menu_icon1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="94dp"
+        android:src="@drawable/menu_icon_1_0" />
+
+</RelativeLayout>

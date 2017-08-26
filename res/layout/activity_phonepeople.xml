@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+     android:background="@drawable/background"
+     >
+
+  <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/et_search1"
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:inputType="phone"
+        android:background="#F0F0F0"
+        android:visibility="gone"
+        android:textSize="20sp"/>
+    <Button 
+        android:id="@+id/input_del"
+        android:layout_width="20.0dip" 
+        android:layout_height="20.0dip" 
+        android:background="@drawable/input_del"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dip"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"/>
+    
+    <ListView android:id="@+id/lv_call"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_search1" />
+
+   	<SlidingDrawer  
+   	    android:id="@+id/sd_key_grid"
+	    android:layout_width="fill_parent"
+	    android:layout_height="300dip"
+	    android:content="@+id/tl_key_grid"
+        android:handle="@+id/ibtn_handler"
+	    android:layout_alignParentBottom="true" >
+	    
+	   <ImageButton 
+	        android:id="@+id/ibtn_handler"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@drawable/bg_key_touch_handler_up"/>
+	    
+	    <TableLayout 
+	        android:id="@+id/tl_key_grid"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content" >
+	        
+	        <TableRow 
+	            android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content" >
+	            
+	            <ImageButton
+	                android:id="@+id/ibtn_key_1"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_1"
+	                android:background="@drawable/bg_key_selector" />
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_2"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_2"
+	                android:background="@drawable/bg_key_selector" />
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_3"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_3"
+	                android:background="@drawable/bg_key_selector" />
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content" >
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_4"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_4"
+	                android:background="@drawable/bg_key_selector" />
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_5"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_5"
+	                android:background="@drawable/bg_key_selector" />
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_6"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_6"
+	                android:background="@drawable/bg_key_selector" />
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content" >
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_7"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_7"
+	                android:background="@drawable/bg_key_selector" />
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_8"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_8"
+	                android:background="@drawable/bg_key_selector" />
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_9"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_9"
+	                android:background="@drawable/bg_key_selector" />
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content" >
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_l"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_l"
+	                android:background="@drawable/bg_key_selector" />
+	            
+	            <ImageButton
+	                android:id="@+id/ibtn_key_0"
+	                style="@style/style_public_1"
+	                android:background="@drawable/bg_key_selector"
+	                android:src="@drawable/icon_key_0" />
+	            
+	            <ImageButton 
+	                android:id="@+id/ibtn_key_r"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_r"
+	                android:background="@drawable/bg_key_selector" />
+	        </TableRow>
+	        
+	        <TableRow 
+	            android:layout_width="fill_parent"
+	        	android:layout_height="wrap_content" >
+	            <ImageButton 
+	                android:id="@+id/keybord_down"
+	                style="@style/style_public_1"
+	                android:src="@drawable/back"
+	                android:background="@drawable/bg_key_selector" /> 
+	            <Button
+	                style="@style/style_public_1"
+	                android:id="@+id/call_out" 
+	                android:text="呼  叫"
+	                android:background="#3EBF54"
+	                android:textSize="22sp"
+	                android:textColor="#ffffff"
+	                android:layout_marginTop="0.5dp"/>
+	           <ImageButton
+	                android:id="@+id/ibtn_key_del"
+	                style="@style/style_public_1"
+	                android:src="@drawable/icon_key_del"
+	                android:background="@drawable/bg_key_selector" />
+	        </TableRow>
+	    </TableLayout>
+	</SlidingDrawer>
+</RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal" 
+         android:layout_weight="1"
+          android:background="@drawable/attach_line">
+
+        <ImageView
+            android:id="@+id/lianjie"
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/hundredmillion_noti_model" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:text="通话记录" 
+            android:textSize="25dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

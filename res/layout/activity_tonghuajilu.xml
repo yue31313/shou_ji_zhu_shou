@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+   >
+
+    <ImageView
+        android:id="@+id/call_miss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="14dp"
+        android:src="@drawable/call_log_type_outgoing" />
+
+
+    <ImageView
+        android:id="@+id/call_you"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/call_time"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/callslog_ic_call_normal" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/call_miss"
+        android:layout_marginRight="34dp"
+        android:layout_toLeftOf="@+id/call_you"
+        android:src="@drawable/callslog_bg_portratline" />
+
+    <TextView
+        android:id="@+id/call_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageView3"
+        android:layout_alignLeft="@+id/call_number"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/call_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="48dp"
+        android:layout_toRightOf="@+id/call_miss"
+        android:text="TextView"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/tonghuacishu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/call_miss"
+        android:layout_below="@+id/call_number"
+        android:background="@drawable/callslog_bg_count"
+        android:text="18" />
+
+    <TextView
+        android:id="@+id/tonghuashijian"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/call_time"
+        android:layout_alignBottom="@+id/call_time"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:text="TextView" />
+
+</RelativeLayout>

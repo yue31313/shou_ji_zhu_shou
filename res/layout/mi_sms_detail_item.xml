@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <RelativeLayout
+        android:id="@+id/layoutA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/messageA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dialogue_popo_white_bg"
+                android:maxWidth="200dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_below="@id/messageA"
+                android:id="@+id/dateA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"/>
+   </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutB"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+            
+            <TextView
+                android:id="@+id/messageB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/dialogue_popo_green_bg_2"
+                android:maxWidth="200dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp"
+                android:textColor="#000000"
+                android:textSize="18sp" 
+                android:layout_alignParentRight="true"/>
+
+            <TextView
+                android:layout_below="@id/messageB"
+                android:id="@+id/dateB"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="7dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>
